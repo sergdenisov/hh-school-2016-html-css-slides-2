@@ -103,3 +103,31 @@ div {
 ```
 
 [Пример](https://jsfiddle.net/sergdenisov/j5ogte1k/1/).
+
+#HSLIDE
+
+### CSS: [transition](https://developer.mozilla.org/en-US/docs/Web/CSS/transition)
+
+```css
+transition-delay: 0s
+transition-duration: 0s
+transition-property: all
+transition-timing-function: ease
+```
+
+```css
+transition: all 3s linear 1s;
+```
+
+[Пример](https://jsfiddle.net/sergdenisov/9xrjc710/1/).
+
+#HSLIDE
+
+### CSS: [вендорные префиксы](https://developer.mozilla.org/en-US/docs/Glossary/Vendor_Prefix)
+
+```css
+-webkit-transition: margin-left 4s linear 1s;
+transition: margin-left 4s linear 1s;
+```
+
+[Can I Use?](http://caniuse.com)
