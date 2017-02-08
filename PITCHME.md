@@ -144,3 +144,178 @@ transition: margin-left 4s linear 1s;
 * [Block, Element, Modifier (BEM)](https://ru.bem.info/methodology/quick-start/).
 
 Полезное: [статья на Хабре](https://habrahabr.ru/post/256109/), [альтернативный сайт про BEM](http://getbem.com).
+
+#HSLIDE
+
+### [Блок Элемент Модификатор](https://ru.bem.info/methodology/quick-start/)
+
+![BEM](images/cap-bem.png)
+
+#VSLIDE
+
+### [БЭМ: блок](https://ru.bem.info/methodology/key-concepts/#Блок)
+
+![BEM: Block](images/block.png)
+
+#VSLIDE
+
+### [БЭМ: свободное перемещение блоков](https://ru.bem.info/methodology/key-concepts/#Свободное-перемещение)
+
+![BEM: Block moving](images/block-moving.png)
+
+#VSLIDE
+
+### [БЭМ: повторное использование блоков](https://ru.bem.info/methodology/key-concepts/#Повторное-использование)
+
+![BEM: Block using](images/block-using.png)
+
+#VSLIDE
+
+### [БЭМ: элемент](https://ru.bem.info/methodology/key-concepts/#Элемент)
+
+![BEM: Element](images/element.png)
+
+#VSLIDE
+
+### [БЭМ: модификатор](https://ru.bem.info/methodology/key-concepts/#Модификатор)
+
+![BEM: Modifier](images/modifier.png)
+
+#HSLIDE
+
+### [БЭМ: именование](https://ru.bem.info/methodology/naming-convention/#Соглашение-по-именованию)
+
+* БЭМ-сущностями называются блоки, элементы и модификаторы.
+* Имена БЭМ-сущностей записываются с помощью цифр и латинских букв в нижнем регистре.
+* Для разделения слов в именах используется дефис (-).
+* Для хранения информации об именах блоков, элементов и модификаторов используются CSS-классы.
+
+#VSLIDE
+
+### [БЭМ: имя блока](https://ru.bem.info/methodology/naming-convention/#Имя-блока)
+
+```css
+.block-name {
+    ...
+}
+```
+
+```html
+<div class="block-name">...</div>
+```
+
+#VSLIDE
+
+### [БЭМ: имя элемента](https://ru.bem.info/methodology/naming-convention/#Имя-элемента)
+
+```css
+.block-name__element-name {
+    ...
+}
+```
+
+```html
+<div class="block-name">...</div>
+```
+
+#VSLIDE
+
+### [БЭМ: имя модификатора](https://ru.bem.info/methodology/naming-convention/#Имя-модификатора)
+
+```css
+.block-name_modifier-name {
+    ...
+}
+.block-name_modifier-name_modifier-value {
+    ...
+}
+```
+
+```html
+<div class="block-name
+            block-name_modifier-name">
+    ...
+</div>
+<div class="block-name
+            block-name_modifier-name_modifier-value">
+    ...
+</div>
+```
+
+#VSLIDE
+
+### [БЭМ: имя модификатора элемента](https://ru.bem.info/methodology/naming-convention/#Модификатор-элемента)
+
+```css
+.block-name__element-name_modifier-name {
+    ...
+}
+.block-name__element-name__modifier-name_modifier-value {
+    ...
+}
+```
+
+```html
+<div class="block-name">
+    <div class="block-name__element-name
+                block-name__element-name_modifier-name">
+        ...
+    </div>
+</div>
+<div class="block-name">
+    <div class="block-name__element-name
+                block-name__element-name__modifier-name_modifier-value">
+        ...
+    </div>
+</div>
+```
+
+#VSLIDE
+
+### [БЭМ: пример использования наименований](https://ru.bem.info/methodology/naming-convention/#Пример-использования-соглашения-по-именованию)
+
+```css
+.form {}
+.form_theme_forest {}
+.form_login {}
+.form__input {}
+.form__submit {}
+.form__submit_disabled {}
+```
+
+```html
+<form class="form form_login form_theme_forest">
+    <input class="form__input">
+    <input class="form__submit form__submit_disabled">
+</form>
+```
+
+#VSLIDE
+
+### [БЭМ: миксы](https://ru.bem.info/methodology/key-concepts/#Микс)
+
+Микс — способ использования разных [БЭМ-сущностей](https://ru.bem.info/methodology/key-concepts/#БЭМ-сущность) на одном
+элементе.
+
+Миксы позволяют:
+
+* Совмещать поведение и стили нескольких БЭМ-сущностей без дублирования кода.
+* Создавать семантически новые компоненты интерфейса на основе имеющихся БЭМ-сущностей.
+
+```html
+<div class="menu"> 
+    <span class="menu__item link">...</span> 
+</div>
+```
+
+#HSLIDE
+
+### CSS-методология в HeadHunter
+
+"У нас свой подход, лишь отдалённо напоминающий БЭМ." (c):
+
+* Есть глобальный `reset.css` (сброс дефолтных стилей для всех браузеров).
+* Миксы запрещены.
+* Модификаторы только булевы.
+* Иногда используются глобальные классы.
+* Иногда используются глобальные модификаторы.
