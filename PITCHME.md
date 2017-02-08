@@ -131,3 +131,16 @@ transition: margin-left 4s linear 1s;
 ```
 
 [Can I Use?](http://caniuse.com)
+
+#HSLIDE
+
+### CSS: [методологии](http://sixrevisions.com/css/css-methodologies/)
+
+[CSS-методология](http://sixrevisions.com/css/css-methodologies) — способ написания и организации CSS-кода для упрощения
+поддержки и масштабирования проекта.
+
+* [Object-Oriented CSS (OOCSS)](http://oocss.org).
+* [Scalable and Modular Architecture for CSS (SMACSS)](https://smacss.com).
+* [Block, Element, Modifier (BEM)](https://ru.bem.info/methodology/quick-start/).
+
+Полезное: [статья на Хабре](https://habrahabr.ru/post/256109/), [альтернативный сайт про BEM](http://getbem.com).
