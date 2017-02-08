@@ -71,3 +71,35 @@ flex: [<'flex-grow'> <'flex-shrink'>? || <'flex-basis'>]
 align-self: auto | flex-start | flex-end | center |
             baseline | stretch
 ```
+
+#HSLIDE
+
+### CSS: [animation](https://developer.mozilla.org/en-US/docs/Web/CSS/animation)
+
+```css
+animation-name: none
+animation-duration: 0s
+animation-timing-function: ease
+animation-delay: 0s
+animation-iteration-count: 1
+animation-direction: normal
+animation-fill-mode: none
+animation-play-state: running
+```
+
+#VSLIDE
+
+```css
+@keyframes slide-in {
+    0% { margin-left: 0; }
+    100% { margin-left: 300px; }
+}
+div {
+    width: 100px;
+    height: 100px;
+    background-color: tomato;
+    animation: 3s ease-in 1s infinite slide-in;    
+}
+```
+
+[Пример](https://jsfiddle.net/sergdenisov/j5ogte1k/1/).
