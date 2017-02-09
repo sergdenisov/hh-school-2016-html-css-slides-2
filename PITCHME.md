@@ -319,3 +319,36 @@ transition: margin-left 4s linear 1s;
 * Модификаторы только булевы.
 * Иногда используются глобальные классы.
 * Иногда используются глобальные модификаторы.
+
+#HSLIDE
+
+### CSS: [препроцессоры](https://www.urbaninsight.com/2012/04/12/ten-reasons-you-should-be-using-css-preprocessor)
+
+[Препроцессоры](https://habrahabr.ru/sandbox/78148/) компилируют СSS код, который мы пишем на процессорном языке в
+чистый, валидный CSS код. Профит:
+
+* Расширяют синтаксис CSS недостающими возможностями.
+* Уменьшают дублирование кода.
+* Делают код более структурированным.
+* Упрощают поддержку кода.
+
+#VSLIDE
+
+### CSS: [популярные препроцессоры](https://www.sitepoint.com/6-current-options-css-preprocessors/)
+
+![CSS: preprocessors](images/preprocessors.jpg)
+
+* [SASS/SCSS](http://sass-lang.com/guide)
+* [Stylus](http://stylus-lang.com)
+* [LESS](http://lesscss.org/features/#features-overview-feature)
+
+#VSLIDE
+
+### CSS: требования к препроцессору в HeadHunter
+
+* Основные возможности: переменные, миксины, математические операторы и т.д.
+* Поддержка Node.js.
+* Строгий CSS-синтаксис.
+* Поддержка IntelliJ IDEA.
+* Поддержка [Source Maps](https://developers.google.com/web/tools/chrome-devtools/javascript/source-maps).
+* Парсер синтаксиса, например, [Gonzales PE](https://github.com/tonyganch/gonzales-pe).
