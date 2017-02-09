@@ -608,10 +608,8 @@ style comment! */
 * [Родительские селекторы](http://lesscss.org/features/#parent-selectors-feature) ограничены 2-мя уровнями.
 * Миксины только [со скобками](http://lesscss.org/features/#mixins-feature-not-outputting-the-mixin) (чтобы не было в
 выходном файле).
-* Не используются:
-    * [Extend](http://lesscss.org/features/#extend-feature).
-    * [Mixins as Functions](http://lesscss.org/features/#mixins-as-functions-feature).
-    * [Import Options](http://lesscss.org/features/#import-options).
+* Не используются: [Extend](http://lesscss.org/features/#extend-feature), [Mixins as Functions](http://lesscss.org/features/#mixins-as-functions-feature),
+[Import Options](http://lesscss.org/features/#import-options).
 
 #HSLIDE
 
