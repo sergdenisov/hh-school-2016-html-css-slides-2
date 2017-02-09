@@ -613,3 +613,14 @@ style comment! */
     * [Mixins as Functions](http://lesscss.org/features/#mixins-as-functions-feature).
     * [Import Options](http://lesscss.org/features/#import-options).
 
+#HSLIDE
+
+### CSS: [Progressive Enhancement / Graceful Degradation](https://habrahabr.ru/post/157115/)
+
+![CSS: Progressive Enhancement / Graceful Degradation](images/progressive_degradation.gif)
+
+#VSLIDE
+
+### CSS: [Mobile First](https://www.sitepoint.com/introduction-mobile-first-media-queries/)
+
+![CSS: Mobile First](images/mobile-first.png)
