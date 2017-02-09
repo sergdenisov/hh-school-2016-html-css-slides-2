@@ -352,3 +352,264 @@ transition: margin-left 4s linear 1s;
 * Поддержка IntelliJ IDEA.
 * Поддержка [Source Maps](https://developers.google.com/web/tools/chrome-devtools/javascript/source-maps).
 * Парсер синтаксиса, например, [Gonzales PE](https://github.com/tonyganch/gonzales-pe).
+
+#HSLIDE
+
+### [LESS](http://lesscss.org)
+
+![LESS](images/less.jpg)
+
+#VSLIDE
+
+### LESS: [использование](http://lesscss.org/#using-less)
+
+* [Подключение скрипта](http://lesscss.org/#client-side-usage):
+
+```html
+<script src="less.js"></script>
+```
+
+* [Через командную строку](http://lesscss.org/#using-less-command-line-usage):
+
+```html
+npm install -g less
+ lessc styles.less
+```
+
+* [Через плагин для сборщика](https://www.npmjs.com/package/gulp-less)
+
+#VSLIDE
+
+### LESS: [переменные](http://lesscss.org/features/#features-overview-feature-variables)
+
+```less
+@nice-blue: #5B83AD;  
+#header {  
+    color: @light-blue; 
+}
+```
+
+```css
+#header { 
+    color: #5B83AD; 
+}
+```
+
+#VSLIDE
+
+### LESS: [миксины](http://lesscss.org/features/#features-overview-feature-mixins)
+
+```less
+.my-mixin { 
+    color: black; 
+} 
+.my-other-mixin() { 
+    background: white; 
+} 
+.block { 
+    .my-mixin; 
+    .my-other-mixin; 
+}
+```
+
+```css
+.my-mixin { 
+    color: black; 
+} 
+.block { 
+    color: black; 
+    background: white; 
+}
+```
+
+#VSLIDE
+
+### LESS: [параметризированные миксины](http://lesscss.org/features/#mixins-parametric-feature)
+
+```less
+.border-radius(@radius: 5px) { 
+    -webkit-border-radius: @radius; 
+    border-radius: @radius; 
+} 
+.button { 
+    .border-radius(6px);
+ }
+```
+
+```css
+  .button { 
+    -webkit-border-radius: 6px; 
+    border-radius: 6px; 
+}
+```
+
+#VSLIDE
+
+### LESS: [вложенные правила](http://lesscss.org/features/#features-overview-feature-nested-rules)
+
+```less
+#header { 
+    color: black; 
+    .navigation { 
+        font-size: 12px; 
+    } 
+    .logo { 
+        width: 300px; 
+    }
+ }
+```
+
+```css
+#header { 
+    color: black; 
+}
+ #header .navigation { 
+    font-size: 12px; 
+} 
+#header .logo { 
+    width: 300px;
+ }
+```
+
+#VSLIDE
+
+### LESS: [вложенные директивы и всплытие](http://lesscss.org/features/#features-overview-feature-nested-directives-and-bubbling)
+
+```less
+.screen-color {
+    @media screen {
+        color: green;
+        @media (min-width: 768px) {
+            color: red;
+        }
+    }
+    @media tv {
+        color: black;
+    }
+}
+```
+
+#VSLIDE
+
+### LESS: [родительские селекторы](http://lesscss.org/features/#parent-selectors-feature)
+
+```less
+a {
+    color: blue;
+    &:hover {
+        color: green;
+    }
+}
+```
+
+```css
+a {
+    color: blue;
+}
+a:hover {
+    color: green;
+}
+```
+
+#VSLIDE
+
+### LESS: [математические операции](http://lesscss.org/features/#features-overview-feature-operations)
+
+```less
+// numbers are converted into the same units
+@conversion-1: 5cm + 10mm; // result is 6cm
+@conversion-2: 2 - 3cm - 5mm; // result is -1.5cm
+// conversion is impossible
+@incompatible-units: 2 + 5px - 3cm; // result is 4px
+// example with variables
+@base: 5%;
+@filler: @base * 2; // result is 10%
+@other: @base + @filler; // result is 15%
+```
+
+```less
+@base: 2cm * 3mm; // result is 6cm
+```
+
+```less
+@color: #224488 / 2; //results in #112244
+background-color: #112244 + #111; // result is #223355
+```
+
+#VSLIDE
+
+### LESS: [функции](http://lesscss.org/features/#features-overview-feature-functions)
+
+```less
+@base: #f04615;
+@width: 0.5;
+.class {
+    width: percentage(@width); // returns 50% 
+    color: darken(@base, 5%);  // returns #dd3d0e
+    background-color: lighten(@base, 10%); // returns #f36c45
+}
+```
+
+#VSLIDE
+
+### LESS: [циклы](http://lesscss.org/features/#loops-feature)
+
+```less
+.loop(@counter) when (@counter > 0) {
+    .loop((@counter - 1)); // next iteration
+    width: (10px * @counter); // code for each iteration
+    }
+div {
+    .loop(5); // launch the loop
+}
+```
+
+```css
+div {
+    width: 10px;
+    width: 20px;
+    width: 30px;
+    width: 40px;
+    width: 50px;
+}
+```
+
+#VSLIDE
+
+### LESS: [импорты](http://lesscss.org/features/#import-directives-feature)
+
+```less
+@import "foo"; // foo.less is imported
+ @import "foo.less"; // foo.less is imported 
+@import "foo.php";  // foo.php imported as a less file 
+@import "foo.css";  // statement left in place, as-is  
+@import (optional, reference) "foo.less";
+  @import (less) "foo.css";
+```
+
+#VSLIDE
+
+### LESS: [комментарии](http://lesscss.org/features/#features-overview-feature-comments)
+
+```less
+/* One hell of a block
+style comment! */
+@var: red;
+// Get in line!
+@var: white;
+```
+
+#HSLIDE
+
+### Использование LESS в HeadHunter
+
+* [Родительские селекторы](http://lesscss.org/features/#parent-selectors-feature) только для элементов, модификаторов,
+псевдо-классов и псевдо-элементов.
+* [Родительские селекторы](http://lesscss.org/features/#parent-selectors-feature) ограничены 2-мя уровнями.
+* Миксины только [со скобками](http://lesscss.org/features/#mixins-feature-not-outputting-the-mixin) (чтобы не было в
+выходном файле).
+* Не используются:
+    * [Extend](http://lesscss.org/features/#extend-feature).
+    * [Mixins as Functions](http://lesscss.org/features/#mixins-as-functions-feature).
+    * [Import Options](http://lesscss.org/features/#import-options).
+
