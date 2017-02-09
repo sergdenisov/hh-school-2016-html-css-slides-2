@@ -670,3 +670,30 @@ style comment! */
     <div class="col-md-6">.col-md-6</div>
 </div>
 ```
+
+#HSLIDE
+
+### Тестирование в браузерах
+
+* Доступные браузеры для своей ОС.
+* Мобильные браузеры на физических устройствах.
+* [Виртуальные машины](https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/) (в основном, для IE).
+* Эмуляторы мобильных устройств, например, в [Xcode](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/iOS_Simulator_Guide/GettingStartedwithiOSSimulator/GettingStartedwithiOSSimulator.html),
+[Genymotion](https://www.genymotion.com).
+* [Эмуляция устройств в Google Chrome](https://developers.google.com/web/tools/chrome-devtools/device-mode/).
+
+#HSLIDE
+
+### Ссылки
+
+* [БЭМ](https://ru.bem.info/method/key-concepts/)
+* [LESS](http://lesscss.org)
+* [Twitter Bootstrap Grid](http://getbootstrap.com/css/#grid)
+
+#HSLIDE
+
+### Спасибо за внимание!
+
+Любите CSS, а то CSS не будет любить вас!
+
+![CSS](images/css.gif)
