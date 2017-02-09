@@ -624,3 +624,49 @@ style comment! */
 ### CSS: [Mobile First](https://www.sitepoint.com/introduction-mobile-first-media-queries/)
 
 ![CSS: Mobile First](images/mobile-first.png)
+
+#HSLIDE
+
+### CSS: [модульные сетки](http://htmlbook.ru/content/modulnaya-setka)
+
+[Модульная сетка](htmlbook.ru/content/modulnaya-setka) представляет собой набор невидимых направляющих, вдоль которых
+располагаются элементы страницы. Профит:
+
+* Это облегчает размещение данных в документе.
+* Обеспечивает визуальную связь между отдельными блоками.
+* Сохраняет преемственность дизайна при переходе от одной страницы к другой.
+
+#VSLIDE
+
+Обычно состоит из:
+
+* Контейнера.
+* Строки.
+* Ячейки.
+* Отступов.
+
+#VSLIDE
+
+![CSS: Grid](images/grid.jpg)
+
+Примеры: [Twitter Bootstrap](http://getbootstrap.com/css/#grid), [960 Grid System](http://960.gs).
+
+#VSLIDE
+
+### CSS: [модульная сетка в Twitter Bootstrap](http://getbootstrap.com/css/#grid)
+
+```html
+<div class="row">
+    <div class="col-md-8">.col-md-8</div>
+    <div class="col-md-4">.col-md-4</div>
+</div>
+<div class="row">
+    <div class="col-md-4">.col-md-4</div>
+    <div class="col-md-4">.col-md-4</div>
+    <div class="col-md-4">.col-md-4</div>
+</div>
+<div class="row">
+    <div class="col-md-6">.col-md-6</div>
+    <div class="col-md-6">.col-md-6</div>
+</div>
+```
