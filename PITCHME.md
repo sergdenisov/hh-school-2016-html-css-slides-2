@@ -215,7 +215,9 @@ transition: margin-left 4s linear 1s;
 ```
 
 ```html
-<div class="block-name">...</div>
+<div class="block-name">
+    <div class="block-name__element-name">...</div>
+</div>
 ```
 
 #VSLIDE
@@ -383,15 +385,15 @@ npm install -g less
 ### LESS: [переменные](http://lesscss.org/features/#features-overview-feature-variables)
 
 ```less
-@nice-blue: #5B83AD;  
+@nice-blue: #5b83ad;  
 #header {  
-    color: @light-blue; 
+    color: @nice-blue; 
 }
 ```
 
 ```css
 #header { 
-    color: #5B83AD; 
+    color: #5b83ad; 
 }
 ```
 
